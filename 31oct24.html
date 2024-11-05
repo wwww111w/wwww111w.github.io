@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>делали софи энд жени с любовью</title>
+</head>
+<body>
+    <input type = "text" id = 'Mytext'>
+    <div id="result"></div>
+    <button onclick="f1()">длина строки</button>
+    <script>
+let Mytext = document.getElementById("Mytext");
+let result = document.getElementById('result');
+function f1(){
+let string = Mytext.value;
+result.innerText = string.length
+}
+<button onclick="f2()">сделать все буквы заглавными</button>
+function f2(){
+let string = Mytext.value;
+result.innerText = string.toUpperCase();
+}
+<button onclick="f4()">перевернуть</button>
+function f4(){
+let string = Mytext.value;
+let strToArr = string.split('');
+strToArr.reverse();
+result.innerText = strToArr;
+}
+    </script>
+</body>
+</html>

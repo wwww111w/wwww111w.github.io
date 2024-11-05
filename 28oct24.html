@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗОМБИ</title>
+</head>
+<body>
+   
+</body>
+<script>
+    let zombie = document.createElement('img');
+    zombie.src = "zombiee.gif";
+    document.body.append(zombie);
+
+    let left = 100;
+    let step = 1;
+
+    zombie.style.position ='fixed';
+    zombie.style.top = '200px';
+    zombie.style.left = '700px';    
+
+    function moveZomnie(){
+        left = left + step;
+        if (left > 1000){
+            step = step *(-1);
+        }
+        zombie.style.left = left + 'px';
+    }
+    setInterval(moveZomnie, 10)
+</script>
+</html>

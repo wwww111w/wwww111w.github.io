@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id='num1' value="первое число"
+    <input type="text" id='num2' value="второе число" <br>
+    <div type="text" id='result'></div>
+    <button onclick="multiply()">Умножить</button>
+    <button onclick="multiply()">сложение</button>
+    <button onclick="multiply()">вычитание</button>
+    <button onclick="multiply()">разделение</button>
+    <script>
+        let n1 = document.getElementById('num1');
+        let n2 = document.getElementById('num2');
+        let res = document.getElementById('result');
+
+        function multiply(){
+            res.innerText = n1.value * n2.value
+        }
+    </script>
+
+</body>
+</html>
